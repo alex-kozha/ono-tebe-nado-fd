@@ -1,63 +1,110 @@
-
-*{
-
-font-family:'Raleway', sans-serif;
-
-}
-
-header{
-display:grid;
-grid-template-columns: 1fr 1fr 1fr;
-
-font-size: 18px;
-font-weight: 400;
-color: #000;
+/* хеадер */
+.header{
+    display:grid;
+    grid-template-columns: 1fr min-content 1fr;;
+    align-items:center;
+    
 }
 
 
-.navigation-above{
-  padding-left: 50px;
-  padding-bottom: 138px;
-  padding-top: 133px;
+.header__link-list{
+display:flex;
+gap:30px;
+justify-self: end;
+padding-right: 30px ;
 }
-
-.menu.head{
-
-display: flex;
-white-space: nowrap;
-}
-
-.menu.head ul:nth-child(2+1){
-
+.header__link-list-item{
 list-style-type: circle;
+text-decoration:underline ;
+}
+.header__link-list-item.item_no-bullit{
+text-decoration: none;
+list-style: none;
 
 }
 
-
-.menu-item{
-
-  margin-right: 32px;
-  border-bottom: 1px solid #000;
-}
-.uncrossed-menu-item{
-border-bottom: 0px;
-list-style:none;
-}
-.menu.head ul::marker{
-margin-right: 100px;
-
+.header__logo{
+display: block;
+justify-self: start;
 }
 
-.parent-of-header-logo{
-width: 148px;
-height: 105px;
+.header__logo-image{
+
+height: 100px;
+width: 100px;
+}
+
+.address{
+font-style: normal;
+display:flex;
+flex-direction: column;
+justify-self:end;
+}
+
+/* 1 секция*/
+
+.cover{
+
+background-image: url(../images/cover.jpg) ;
+min-height: 800px;
+background-size: cover;
+position: relative;
+z-index: -1;
+color: #fff;
+display:grid;
+grid-template-rows: 2;
 
 }
 
-.header-logo{
+.overlay{
 
-padding: 1.16 9.86 0.81 9.03;
-width: 129.11196899414062px;
-height:104.6517562866211px;
+position: absolute;
+height: 100%;
+width:100%;
+top:0px;
+left:0px;
+background-color: rgb(0, 0, 0, 0.6);
+z-index:0;
+}
 
+.cover__title{
+    position: relative;
+z-index:2;
+font-size: 100px;
+padding-top:50px;
+height: 500px;
+
+}
+
+.aligned-text{
+    display:block;
+}
+
+.aligned-text_left{
+    text-align:left ;
+}
+
+.aligned-text_center{
+    text-align: center;
+}
+.aligned-text_right{
+    text-align:right;
+}
+
+.cover__description{
+position: relative;
+z-index: 2;
+display:flex;
+justify-content: space-around;
+}
+
+.cover__description-text{
+
+align-self:end;
+
+}
+.bet-button{
+background-color: transparent;
+ color: #fff;   
+ align-self:end;
 }
