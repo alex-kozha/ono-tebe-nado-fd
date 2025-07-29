@@ -21,7 +21,7 @@
   align-self: start;
 }
 
-.header__links-list-item_no-bullit{
+.header__links-list-item_no-bullit {
   text-decoration: none;
   list-style: none;
 }
@@ -98,7 +98,7 @@
   text-align:left;
 }
 
-.aligned-text_indent{
+.aligned-text_indent {
   margin-right: -0.3em;
 }
 
