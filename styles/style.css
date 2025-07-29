@@ -27,7 +27,7 @@
   list-style: none;
 }
 
-.item_left_margin{
+.item_left_margin {
 margin-left: 3px;
 
 }
@@ -135,7 +135,6 @@ margin-left: 3px;
   font-size:22px;
   text-transform: uppercase;
   align-self: center;
-  word-spacing: 1px;
   line-height: 28px;
   word-spacing: 18.5px;
   position: relative;
