@@ -312,7 +312,7 @@
 }
 
 .footer__menu-list {
-  text-underline-offset: 4px;
+  text-underline-offset: 4.5px;
   list-style-type: none;
   font-size:18px;
   display: grid;
