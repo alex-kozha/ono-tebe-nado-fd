@@ -11,19 +11,25 @@
   display:flex;
   justify-content: start;
   gap: 32px;
-  text-underline-offset:4px;
 }
 
 .header__link-list-item {
   list-style-type: circle;
-  text-decoration:underline ;
-  line-height: 100%;
   align-self: start;
 }
 
+.header__link {
+  text-underline-offset:4px;
+  font-size: 18px;
+  line-height: 100%;
+}
+
 .header__links-list-item_no-bullit {
-  text-decoration: none;
   list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -47,6 +53,7 @@
 
 .header__address {
   padding-top: 3px;
+  margin-right: 3px;
   display:flex;
   flex-direction: column;
   justify-self:end;
@@ -179,7 +186,7 @@
 }
 
 .card-link {
-  text-decoration: none;
+  list-style: none;
 }
 
 .card {
